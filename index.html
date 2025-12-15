@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मोहन कुम्हार की कहानी</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .story-content {
+            padding: 40px;
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #333;
+            text-align: justify;
+        }
+
+        .potter-icon {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 4em;
+            animation: rotate 3s ease-in-out infinite;
+        }
+
+        @keyframes rotate {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(10deg); }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffd89b 0%, #19547b 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .moral {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            border-left: 5px solid #f5576c;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .illustration {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .scene {
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border-radius: 15px;
+            flex: 1;
+            min-width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .scene:hover {
+            transform: translateY(-10px);
+        }
+
+        .scene-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .scene-text {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .story-content {
+                padding: 20px;
+                font-size: 1em;
+            }
+
+            .scene {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏺 मोहन कुम्हार की कहानी 🏺</h1>
+            <p>मेहनत और संतोष की एक प्रेरक कथा</p>
+        </div>
+
+        <div class="story-content">
+            <div class="potter-icon">🏺</div>
+
+            <p>
+                एक गाँव में <span class="highlight">मोहन</span> नाम का एक गरीब कुम्हार रहता था। वह रोज़ सुबह नदी से मिट्टी लाता और अपने चाक पर घड़े बनाता।
+            </p>
+
+            <div class="illustration">
+                <div class="scene">
+                    <div class="scene-icon">🌅</div>
+                    <div class="scene-text">सुबह नदी से मिट्टी लाना</div>
+                </div>
+                <div class="scene">
+                    <div class="scene-icon">⚙️</div>
+                    <div class="scene-text">चाक पर घड़े बनाना</div>
+                </div>
+                <div class="scene">
+                    <div class="scene-icon">🏙️</div>
+                    <div class="scene-text">शहर में भेजना</div>
+                </div>
+            </div>
+
+            <p>
+                एक दिन उसने एक <span class="highlight">खास घड़ा</span> बनाया, जिसमें उसने अपना सपना बसाया था। वह घड़ा शहर भेज दिया गया।
+            </p>
+
+            <p style="margin-top: 20px;">
+                शहर में उसी घड़े ने एक बच्चे की प्यास बुझाई। मोहन को पैसे कम मिले, पर उसे खुशी हुई कि उसकी मेहनत किसी के काम आई।
+            </p>
+
+            <div class="moral">
+                <strong>💡 सीख:</strong> जीवन में सफलता केवल पैसों से नहीं मापी जाती। असली खुशी तब मिलती है जब हमारा काम किसी के जीवन में सकारात्मक बदलाव लाता है। मोहन की मेहनत और संतोष हमें सिखाते हैं कि छोटे-छोटे काम भी बड़े अर्थ रखते हैं।
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <div style="font-size: 3em; margin-bottom: 10px;">🙏</div>
+                <p style="font-style: italic; color: #666;">
+                    "मेहनत का फल मीठा होता है, भले ही वह देर से मिले।"
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            एक प्रेरक कहानी | मेहनत • संतोष • सेवा
+        </div>
+    </div>
+</body>
+</html>
